@@ -1,4 +1,4 @@
-// Esta funcion toma por prompt el id del curso comprado y llama a la fx datosPersonales.
+// Esta funcion toma por prompt los ids de los cursos comprados y llama a la fx datosPersonales.
 function compra(productos){
     let cantCursos = prompt("¿Cuántos cursos desea comprar?")
     
@@ -51,7 +51,6 @@ function detallesCompra(datos, cursosComprado, precioCursoscomprado, cantCursos)
     for (let i = 0; i < cantCursos; i++) {
         console.log(cursosComprado[i], " Precio: ", precioCursoscomprado[i])
     }
-    
     console.log("Precio total: ", totalCompra)
 }    
 // Programa principal.
@@ -61,7 +60,7 @@ const productos = [
     { id:3, nombre: "Curso derecho civil", precio: 10000},
     { id:4, nombre: "Curso derecho comercial", precio: 3000},
     { id:5, nombre: "Curso derecho nautico", precio: 5000},
-  ]
+]
 
 compra(productos)
 
